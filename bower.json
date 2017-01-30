@@ -1,0 +1,11 @@
+{
+  "name": "webapp",
+  "private": true,
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "jquery": "2.2.0",
+    "bootstrap-sass": "^3.3.7",
+    "lato": "^0.3.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,134 @@
+.header {
+    .slider {
+            width: 100%;
+            margin: 0px auto;
+    }
+    .slick-slide {
+        margin: 0px 0px;
+
+        img {
+            width: 100%;
+            height: 622px;
+        }
+    }
+    .slick-dots {
+        bottom: 47px;
+
+        li {
+            border: solid transparent 3px;
+            border-radius: 50%;
+            margin: 0 6px;
+            height: 28px;
+            width: 28px;
+
+            button:before {
+            left: 1px;
+            font-size: 34px;
+            line-height: 23px;
+            color: white;
+            opacity: 1;
+            }
+        }
+        li.slick-active {
+        border: solid white 3px;
+        
+            button:before {
+            color: white;
+            opacity: 1;              
+            }
+        }
+    }
+
+    .logo-icon {    
+        width: 164px;
+        height: 37px;
+        margin: 27px auto 36px;
+        background: url('/assets/images/logo_admanic.png') no-repeat; 
+        background-size: 100%;
+        overflow: hidden;
+        text-indent: -30%;
+    }
+
+    .logo {
+        border: 1px solid black;      
+        width: 29.5%;
+        height: 9.2vw;
+        padding: 0;
+
+            .row {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+            
+            .right-dev, .left-dev {
+                height: 100%;
+                overflow: hidden;                
+                padding: 0.791vw 0.94vw;
+
+                span {
+                font-size: 1.1rem;
+                margin-top: 0.4rem;
+                margin-right: 0.25rem;
+                margin-bottom: 0.6rem;
+                margin-left: 0.25rem;
+                }
+            }
+            .left-dev {
+                border-right: 1px solid black;
+            }
+            .right-dev {
+                border-left: 1px solid black;
+            }
+            .center-dev {
+                height: 100%;
+                padding: 0;
+                text-align: center;
+
+                h1 {
+                    font-family: 'Courier New';
+                    color:  #000000;
+                    font-size: 4.2rem;
+                    font-weight: 700;
+                    letter-spacing: 5.04rem;
+                    text-align: center;
+                    display: inline-block;
+                    margin: 1.3rem auto;
+                    width: 85%;
+                }
+                .front-end {
+                    font-family: 'Courier New';
+                    color:  #000000;
+                    font-size: 1.224rem;
+                    font-weight: 700;
+                    letter-spacing: 2.2503rem;
+                    line-height: 1.634;
+                    display: inline-block;
+                    text-align: center;
+                    margin: 1.4rem auto 0;
+                    width: 104%;
+
+                }
+                hr {
+                    margin: 1rem auto;
+                    border-top: 1px solid black;
+                }
+                .developer {
+                    font-family: 'Courier New';
+                    color:  #000000;
+                    font-size: 0.893rem;
+                    font-weight: 700;
+                    letter-spacing: 2.411rem;
+                    line-height: 2.24;
+                    text-align: left;
+                    display: inline-block;
+                    text-align: center;
+                    margin: 0.2rem auto;
+                    width: 103%;
+                }
+            }
+                
+    }
+}
+
