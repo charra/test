@@ -1,0 +1,221 @@
+//slider
+.slider {
+        width: 100%;
+        margin: 0px auto;
+        height: 64.2rem;
+        background-color: #ff4622;
+        position: relative;
+}
+.slick-slide {
+    margin: 0px 0px;
+}
+.slick-dots {
+    right: 4.7%;
+    top: 46.8%;
+    width: 1rem;
+
+    li {
+        border: solid transparent 1px;
+        border-radius: 50%;
+        margin: 4px;
+        height: 13px;
+        width: 13px;
+
+        button:before {
+            left: -4.4px;
+            top: -5.99px;
+            font-size: 30px;
+            line-height: 23px;
+            color: white;
+            opacity: 1;
+        }
+    }
+    li.slick-active {
+        border: solid white 1px;
+    
+        button:before {
+            color: white;
+            opacity: 1;              
+        }
+    }
+}
+
+.we-need {
+    position: relative;
+
+    .caption {
+        display: inline-block;
+        position: absolute;
+        float: left;
+        z-index: 1;
+        padding: 3.7rem 8.6rem;    
+        h1 {
+            width: 33.6rem;
+            height: 7.3rem;
+            font-family: Lato;
+            color:  #ffffff;
+            font-size: 7.2rem;
+            font-weight: 300;
+            text-align: left;
+            margin: 0 0.1rem;            
+        }
+        .blue-rectangle {
+            width: 32.9rem;
+            height: 2.8rem;
+            margin-top: 0.5rem;
+            margin-left: 0.1rem;
+            background-color: #0066ff;
+            display: inline-block;
+            span {
+                font-family: Lato;
+                color: #ffffff;
+                font-size: 2.4rem;
+                font-weight: 300;
+                text-align: left;
+                margin-left: 0.8rem;
+                letter-spacing: 0.02rem;           
+                line-height: 1;
+            }
+        }
+    }
+    .slide-1 {
+        margin: 0;
+        height: 64.5rem;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+
+        .task-1 {
+            background: url('../images/calendar_2.png') no-repeat; 
+            background-size: 13.65%;
+            background-position: 6% 19%;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            top: 23.2%;
+            span.caption-1 {
+                margin-left: 45.8rem;
+                word-spacing: -0.2rem;
+                letter-spacing: 0.09rem;
+                font-family: Lato;
+                color: #732312;
+                font-size: 4.8rem;
+                font-weight: 300;
+                line-height: 1.25;
+                text-align: left;
+                padding: 0;
+            } 
+            ul {
+                font-family: Lato;
+                color: #ffffff;
+                font-size: 3.2rem;
+                font-weight: 300;
+                line-height: 1.875;
+                text-align: left;
+                margin-left: 38%;
+                margin-left: 31%;
+                margin-top: 3.7rem;
+                word-spacing: -0.4rem;
+                letter-spacing: 0.1rem;               
+
+            }
+            li>a.test {
+                color:  #732212;
+                margin-left: 1.2rem;
+                font-weight: 300;
+                letter-spacing: normal;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .new-window {
+                display: inline-block;
+                position: relative;
+                left: 0.6rem;                                
+                line-height: 0.8;
+                background-color: #ce3d20;                
+                height: 3.2rem;
+                width: 18.2%;
+                margin-left: -0.1rem;
+                padding-left: 3.5rem;               
+            }
+            .window {
+                @extend .icon;
+                @extend .icon-newWindowicon;
+                font-size: 0.15rem;
+                position: absolute;
+                top: 0.4rem;
+                left: 0.8rem;
+                &:before {                    
+                font-size: 1.5vw; 
+                }
+            }
+        }
+    }
+    .slide-2 {
+        height: 64.5rem;
+        margin: 0 auto;
+        .task-2 {
+            text-align: center;
+            margin: 0 auto;
+            height: 100%;
+            div {
+                margin: 0 -1rem;
+            }
+            span.text {
+                width: 95.18%;
+                height: 100%;
+                z-index: 3;
+                position: relative;
+                top: 48.3rem;
+                left: 4.1rem;
+                display: inline-block;
+                letter-spacing: 0.029rem;
+                line-height: 1.2;
+                text-align: center;
+                font-family: Lato;
+                color:  #ffffff;
+                font-size: 3.2rem;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+        .screen {
+            background: url('../images/screen.png') no-repeat; 
+            background-size: 46.65%;
+            background-position: 65% 48.5%;
+            height: 100%;
+
+            span.text {
+                margin-left: -1.9rem;
+                letter-spacing: 0.0629rem;
+            }    
+        }
+        .bootstrap-3 {
+            background: url('../images/Layer 18 copy.png') no-repeat; 
+            background-size: 17.8%;
+            background-position: 51.5% 48%;
+            height: 100%;
+
+            span.text {
+                margin-left: -8rem;
+            }     
+        }
+        .calendar-2 {
+            background: url('../images/calendar.png') no-repeat; 
+            background-size: 45%;
+            background-position: 39% 47.8%;
+            height: 100%;
+
+            span.text {
+                margin-left: -14rem;
+            }     
+        }
+    }    
+} 
+    
+   
+    

@@ -51,3 +51,23 @@ $lato-font-path: '../fonts';
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'Courier New';
+  src: url('#{$lato-font-path}/cour.ttf');
+  src: local('Courier New'),
+       local('Courier New'),
+       url('#{$lato-font-path}/cour.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Courier Bold';
+  src: url('#{$lato-font-path}/courbd.ttf');
+  src: local('Courier Bold'),
+       local('Courier Bold'),
+       url('#{$lato-font-path}/courbd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

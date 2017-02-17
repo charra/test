@@ -1,87 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project title</title>
-
-	<link href="assets/css/app.css" rel="stylesheet">
-	<script src="assets/js/app.js"></script>
-
-  </head>
-  <body>   
-    <header class="header clearfix">
-        <div class="wrapper">
-        	<div class="logo-icon">logo Admantic</div>
-            <div class="logo container clearfix hidden-sm hidden-xs">
-				<div class="row">
-	            	<section class="left-dev col-lg-4 col-md-4 hidden-sm hidden-xs">
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	            	</section>
-	            	<section class="center-dev col-lg-14 col-md-14 hidden-sm hidden-xs">
-	            		<div>
-	            			<h1>NO.1</h1>
-	            			<span class="front-end">FRONT-END</span>
-	            			<hr>
-	            			<span class="developer">DEVELOPER</span>
-	            		</div>
-	            	</section>
-	            	<section class="right-dev col-lg-4 col-md-4 hidden-sm hidden-xs">
-	            		<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	        			<span class="glyphicon glyphicon-star"></span>
-	            	</section>
+	<head>
+		<% include partials/head %>
+		<script src="assets/js/app.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB43nlrdXtbWsY6o5SYF4uxQ1oaL3jggo&callback=initMap" async defer></script>
+	</head>
+<body>
+	<% include partials/header %>
+	<% include partials/section-1_we-need %>
+	<% include partials/section-2_we-propose %>
+	<% include partials/section-3_about-us %>
+	<section id="contact" class="container">
+		<div class="row">
+			<div class="contact-content col-lg-12">
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 left-column">
+					<h3 class="right-caption">That’s where we are</h3>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 contacts">
+						<span class="icon-envelope"></span>
+						<p>EMAIL</p>
+						<a href="#">cv@moebius.labs</a>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 contacts phone">
+						<span class="icon-endCall"></span>
+						<p>PHONE NUMBER</p>
+						<a href="#">+38 012 345 6789</a>
+					</div>
+					<address class="col-lg-5 col-md-5 col-sm-12 col-xs-12 contacts">
+						<span class="icon-map"></span>
+						<p>LOCATION</p>
+						<a href="#" target="_blank">61000 Kharkov, Ukraine, Kosmicheskaya, 21</a>
+					</address>
 				</div>
-            </div>
-            <nav class="menu list-inline">
-                <ul>
-                    <li><a href="we need"></a></li>
-                    <li><a href="we propose"></a></li>
-                    <li><a href="who we are"></a></li>
-                    <li><a href="contact infornation"></a></li>
-                </ul>
-            </nav>
-            <section class="center slider">
-                <div>
-                  <img src="http://placehold.it/350x300?text=2">
-                </div>
-                <div>
-                  <img src="http://placehold.it/350x300?text=3">
-                </div>                      
-            </section>                
-        </div>
-    </header>
-  </body>
+				<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 right-column">
+					<h3>Say hello!</h3>
+					<form>
+						<fieldset>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 name-email">
+								<input id="name" class="name" type="text" placeholder="NAME" required/>
+								<i class="icon-icon"></i>
+								<input id="email" class="email" type="email" placeholder="EMAIL@" required/>
+								<label for="email" class="control-label mail text-uppercase">
+									required
+									<i class="icon-envelope"></i>
+								</label>								
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 texarea-holder">
+								<textarea placeholder="HOVER STATE"></textarea>
+								<button type="submit" class="btn btn-primary submit text-uppercase">
+									Send message
+									<i class="glyphicon glyphicon-send"></i>
+								</button>
+							</div>
+							
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="map"></div>
+
+</body>
 </html>

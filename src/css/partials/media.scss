@@ -1,0 +1,172 @@
+@media (min-width: $screen-lg-min) {
+    .right-columns {
+        padding-left: 0;
+        padding-right: 15px;    
+    }
+    .left-columns {
+        padding-left: 15px;
+        padding-right: 15px;    
+    }
+    .office-chair, .computer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .office-table {
+        padding-left: 0rem;
+        padding-right: 15px;
+    }
+    .perks {
+        padding-left: 0rem;
+        padding-right: 7px;
+    }
+    .modern-office {
+        padding-right: 15px;
+    }  
+}
+
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {    
+}
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .slider {    
+        height: 72.5rem;    
+    }
+    .slick-dots {
+        right: 5.7%;
+    }
+    .we-propose .propositions .image-holder {
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+        top: 0;
+    }
+    .we-propose .propositions .office-table .image-holder {
+        width: 50%;
+        margin-left: 0;        
+        overflow: hidden;
+    }
+    .we-propose .propositions .text-holder {
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .we-propose .propositions .office-table .text-holder {
+        width: 42%;
+
+        h1 {
+            font-size: 30px;
+        }
+        span {
+            font-size: 18px;
+        }
+    }
+    #contact .contact-content .right-column  {        
+        h3 {
+            text-align: center; 
+        }
+    }
+    #contact .contact-content .right-column .name-email {
+        text-align: center;
+    }
+    #contact .contact-content .right-column .texarea-holder {
+        text-align: center;
+
+        textarea {
+            //width: 100% !important;
+        }
+        button {
+            width: 95%;
+        }
+    }
+    #contact .contact-content .left-column {
+        text-align: center;
+
+        h3 {
+            text-align: center; 
+        }
+    }
+}
+
+
+@media (max-width: $screen-xs-max) {
+    .slider {    
+        height: 72.5rem;    
+    }
+    .slick-dots {
+        right: 8.7%;
+    }
+    .we-need .slide-1 .task-1 ul {
+        font-size: 10px;
+        line-height: 1.28;
+        margin-left: 21%;
+        margin-top: 3.7rem;
+    }
+    .we-need .slide-2 .task-2 span.text {
+        font-size: 10px;
+    }
+    .slick-dots li button:before {
+    top: -6.99px;
+    }
+    .slick-dots li {
+    margin: 3px 12px;
+    }
+    .we-propose .propositions .image-holder {
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .we-propose .propositions .office-table .image-holder {
+        width: 60%;
+        margin-left: auto;
+        top: -10%;
+    }
+    .we-propose .propositions .text-holder {
+        position: relative;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .we-propose .propositions .office-table .text-holder {
+        top: -20%;
+        h1 {
+            font-size: 30px;
+        }
+        span {
+            font-size: 18px;
+        }
+    }
+    #contact .contact-content .right-column  {        
+        h3 {
+            text-align: center; 
+        }
+    }
+    #contact .contact-content .right-column .name-email {
+        text-align: center;
+    }
+    #contact .contact-content .right-column .texarea-holder {
+        text-align: center;
+        textarea {
+            //width: 100% !important;
+        }
+        button {
+            width: 95%;
+        }
+    }
+    #contact .contact-content .left-column {
+        text-align: center;
+
+        h3 {
+            text-align: center; 
+        }
+    }
+}
+    

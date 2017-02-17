@@ -1,49 +1,10 @@
-.header {
-    .slider {
-            width: 100%;
-            margin: 0px auto;
-    }
-    .slick-slide {
-        margin: 0px 0px;
-
-        img {
-            width: 100%;
-            height: 622px;
-        }
-    }
-    .slick-dots {
-        bottom: 47px;
-
-        li {
-            border: solid transparent 3px;
-            border-radius: 50%;
-            margin: 0 6px;
-            height: 28px;
-            width: 28px;
-
-            button:before {
-            left: 1px;
-            font-size: 34px;
-            line-height: 23px;
-            color: white;
-            opacity: 1;
-            }
-        }
-        li.slick-active {
-        border: solid white 3px;
-        
-            button:before {
-            color: white;
-            opacity: 1;              
-            }
-        }
-    }
-
+.header { 
+    position: relative;   
     .logo-icon {    
         width: 164px;
         height: 37px;
         margin: 27px auto 36px;
-        background: url('/assets/images/logo_admanic.png') no-repeat; 
+        background: url('../images/logo_admanic.png') no-repeat; 
         background-size: 100%;
         overflow: hidden;
         text-indent: -30%;
@@ -55,24 +16,26 @@
         height: 9.2vw;
         padding: 0;
 
-            .row {
-                height: 100%;
-                padding: 0;
-                margin: 0;
-                text-align: center;
+        .row {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
             }
             
             .right-dev, .left-dev {
                 height: 100%;
                 overflow: hidden;                
                 padding: 0.791vw 0.94vw;
+                width: 18.18182%;
+                float: left;
 
                 span {
-                font-size: 1.1rem;
-                margin-top: 0.4rem;
-                margin-right: 0.25rem;
-                margin-bottom: 0.6rem;
-                margin-left: 0.25rem;
+                    font-size: 1.1rem;
+                    margin-top: 0.4rem;
+                    margin-right: 0.25rem;
+                    margin-bottom: 0.6rem;
+                    margin-left: 0.25rem;
                 }
             }
             .left-dev {
@@ -85,6 +48,8 @@
                 height: 100%;
                 padding: 0;
                 text-align: center;
+                width: 63.63636%;
+                float: left;
 
                 h1 {
                     font-family: 'Courier New';
@@ -127,8 +92,48 @@
                     margin: 0.2rem auto;
                     width: 103%;
                 }
-            }
-                
+            }               
     }
+
+    .menu {
+        width: 595px;
+        padding: 0;        
+        margin-bottom: 2.6rem;
+
+        ul {
+            text-align: left;
+            margin-top: 3.1rem;
+            padding: 0;
+
+            li:first-child {
+                margin-left: 0.3rem;
+            }
+            li {
+                display: inline-block;
+                width: 22.75%;
+                margin-left: 0.83%;
+            }
+            li:last-child {
+                margin-right: -1.4931%;
+                float: right;
+                letter-spacing: 0.01rem;
+            }
+
+            a {
+                font-family: Lato;
+                color:  #000000;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 1.429;
+                text-align: center;
+                text-decoration: none;
+            }
+            a:hover {
+                color:  #ff4622;                
+                list-style: none;
+                text-decoration: none;
+            }
+        }
+    } 
 }
 

@@ -2,6 +2,8 @@
 //Plugins
 @import "../vendor/slick-carousel/slick/slick.scss";
 @import "../vendor/slick-carousel/slick/slick-theme.scss";
+/* @import "../vendor/lato-webfont/scss/lato-webfont.scss"; */
+
 
 @import "partials/variables.scss";
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap.scss";
@@ -15,5 +17,11 @@
 //Components
 
 @import "partials/fonts.scss";
+@import "partials/icons.scss";
 @import "partials/body.scss";
+
 @import "partials/header.scss";
+@import "partials/section-1_we-need.scss";
+@import "partials/section-2_we-propose.scss";
+@import "partials/section-3_about_us.scss";
+@import "partials/media.scss";

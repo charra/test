@@ -28,7 +28,7 @@ var gulp = require('gulp'),
 var paths = {  
   scripts:   ['./src/js/*.js'],
   styles:    ['./src/css/*.{scss,sass,css}'],
-  images:    ['./src/images/**', '!./src/images/sprite/**', '!./src/images/sprite/'],
+  images:    ['./src/images/**', '!./src/images/sprite/**', '!./src/images/sprite/', '!./src/images/icons/**', '!./src/images/icons/'],
   templates: ['./src/templates/*.ejs']
 };
 
@@ -110,13 +110,13 @@ gulp.task('rev', function () {
 
 // Copy fonts
 gulp.task('fonts', function() {
-  gulp.src('src/**/*.{eot,svg,ttf,woff,woff2}')
+  gulp.src('src/**/**/*.{eot,svg,ttf,woff,woff2}')
     .pipe(flatten())
     .pipe(gulp.dest('dist/assets/fonts'));
 });
 
 // Create icon font
-var fontName = 'webicons';
+var fontName = 'WebIcons';
 gulp.task('iconfont', function(){
   gulp.src(['./src/images/icons/*.svg'])
     .pipe(iconfontCss({

@@ -1,0 +1,41 @@
+@font-face {
+	font-family: "WebIcons";
+	src: url('../fonts/WebIcons.eot');
+	src: url('../fonts/WebIcons.eot?#iefix') format('eot'),
+		url('../fonts/WebIcons.woff') format('woff'),
+		url('../fonts/WebIcons.ttf') format('truetype'),
+		url('../fonts/WebIcons.svg#WebIcons') format('svg');
+}
+
+.icon:before {
+	font-family: "WebIcons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-endCall:before {
+	content: "\E001";
+}
+
+.icon-envelope:before {
+	content: "\E002";
+}
+
+.icon-icon:before {
+	content: "\E003";
+}
+
+.icon-map:before {
+	content: "\E004";
+}
+
+.icon-newWindowicon:before {
+	content: "\E005";
+}
